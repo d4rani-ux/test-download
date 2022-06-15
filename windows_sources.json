@@ -1,0 +1,22 @@
+# sources.json for windows
+{
+    "api.version": "v1",
+    "sources": [
+      {
+         "sourceType": "LocalFile",
+         "name": "Atomic Red Team Log Collection",
+         "pathExpression": "C:\\logs\\*.log",
+         "category": "windows_atomic"
+      },
+      {
+         "sourceType":"LocalWindowsEventLog",
+         "name":"Local Windows Events",
+         "renderMessages":true,
+         "logNames":[
+            "Security",
+            "Application"
+         ],
+         "category": "windows_events"
+      }
+    ]
+}
