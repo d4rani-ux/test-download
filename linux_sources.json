@@ -33,7 +33,7 @@
          {
             "sourceType": "LocalFile",
             "name": "sumo_collector",
-            "pathExpression": "/var/log/syslog",
+            "pathExpression": "/var/log/*.log",
             "category": "labs/linux/collector",
             "hostName": "dev_linux",
             "useAutolineMatching": false,
