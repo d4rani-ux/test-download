@@ -1,24 +1,11 @@
 {
     "api.version": "v1",
     "sources": [
-        {
-            "sourceType": "LocalFile",
-            "name": "messages",
-            "pathExpression": "/var/log/messages",
-            "category": "labs/linux/messages",
-            "hostName": "dev_linux",
-            "useAutolineMatching": false,
-            "multilineProcessingEnabled": false,
-            "timeZone": "Asia/Seoul",
-            "automaticDateParsing": true,
-            "forceTimeZone": false,
-            "defaultDateFormat": "MMM dd HH:mm:ss"
-        },
 	{
             "sourceType": "LocalFile",
-            "name": "secure",
-            "pathExpression": "/var/log/secure",
-            "category": "labs/linux/secure",
+            "name": "syslog",
+            "pathExpression": "/var/log/syslog",
+            "category": "labs/linux/syslog",
             "hostName": "dev_linux",
             "useAutolineMatching": false,
             "multilineProcessingEnabled": false,
