@@ -4,7 +4,7 @@
       {
          "sourceType": "LocalFile",
          "name": "Atomic Red Team Log Collection",
-         "pathExpression": "C:\\logs\\*.log",
+         "pathExpression": "C:\\logs\\*.csv",
          "category": "windows_atomic"
       },
       {
