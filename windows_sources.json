@@ -5,6 +5,7 @@
          "sourceType": "LocalFile",
          "name": "Atomic Red Team Log Collection",
          "pathExpression": "C:\\logs\\*.csv",
+         "multilineProcessingEnabled":true,
          "category": "windows_atomic"
       },
       {
