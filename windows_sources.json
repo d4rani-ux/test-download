@@ -14,9 +14,31 @@
          "renderMessages":true,
          "logNames":[
             "Security",
-            "Application"
+            "Application",
+             "System"
          ],
+         "eventFormat":1,
+         "eventMessage":1,
          "category": "windows_events"
-      }
-    ]
+      },
+      {
+    "name":"AD",
+    "category":"{{sys.PATH}}-{{sys.YourEnvVar}}",
+    "automaticDateParsing":false,
+    "multilineProcessingEnabled":false,
+    "useAutolineMatching":false,
+    "forceTimeZone":false,
+    "filters":[],
+    "cutoffTimestamp":0,
+    "encoding":"UTF-8",
+    "fields":{      
+    },
+    "nameSuffixes":"CN=System",
+    "filter":"(objectClass=user)",
+    "interval":60000,
+    "additionalAttr":"name",
+    "excludedAttr":"whenCreated;objectGUID",
+    "sourceType":"ActiveDirectory"
+    }
+  ]
 }
