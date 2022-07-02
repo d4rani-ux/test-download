@@ -3,9 +3,9 @@
     "sources": [
 	{
             "sourceType": "LocalFile",
-            "name": "syslog",
-            "pathExpression": "/var/log/syslog",
-            "category": "labs/linux/syslog",
+            "name": "dmesg",
+            "pathExpression": "/var/log/dmesg",
+            "category": "labs/linux/dmesg",
             "hostName": "dev_linux",
             "useAutolineMatching": false,
             "multilineProcessingEnabled": false,
@@ -16,9 +16,22 @@
         },
          {
             "sourceType": "LocalFile",
-            "name": "sumo_collector",
-            "pathExpression": "/var/log/*.log",
-            "category": "labs/linux/collector",
+            "name": "auth log",
+            "pathExpression": "/var/log/auth.log",
+            "category": "labs/linux/auth",
+            "hostName": "dev_linux",
+            "useAutolineMatching": false,
+            "multilineProcessingEnabled": false,
+            "timeZone": "Asia/Seoul",
+            "automaticDateParsing": true,
+            "forceTimeZone": false,
+            "defaultDateFormat": "MMM dd HH:mm:ss"
+        },
+	{
+            "sourceType": "LocalFile",
+            "name": "security",
+            "pathExpression": "/home/ubuntu/security.log",
+            "category": "labs/linux/security",
             "hostName": "dev_linux",
             "useAutolineMatching": false,
             "multilineProcessingEnabled": false,
