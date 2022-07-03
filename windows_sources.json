@@ -23,7 +23,7 @@
       },
       {
     "name":"AD",
-    "category":"{{sys.PATH}}-{{sys.YourEnvVar}}",
+    "category":"windows_ad",
     "automaticDateParsing":false,
     "multilineProcessingEnabled":false,
     "useAutolineMatching":false,
